@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">ESPplay</string>
+    <string name="title_home">Todos os Locais</string>
+    <string name="title_home_buscar">Buscar Locais</string>
+    <string name="title_home_enviar">Enviar Locais</string>
+    <string name="title_home_favoritos">Locais Favoritos</string>
+    <string name="title_home_perfil">Perfil</string>
+
+    <string name="title_profile_sup">Suporte</string>
+
+    <!--FACEBOOK-->
+    <string name="facebook_app_id">140064809859977</string>
+    <string name="welcome">Bem Vindo!</string>
+    <string name="cancel_login">Operação cancelada!</string>
+    <string name="error_login">Ocorreu um erro ao entrar!</string>
+    <string name="logout">Terminar sessão!</string>
+
+    <!--GOOGLE-->
+    <string name="google_place_api">AIzaSyAkRhI3m583zj2crs7x4OG7oINgmTcK6Nc</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_nome">Nome</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_register_in">Registrar</string>
+    <string name="action_login">Lembrou sua conta? \ntoque aqui e entre agora!</string>
+    <string name="action_register">Você ja tem conta? Não? Registre-se já!</string>
+    <string name="action_recover">Esqueceu a senha?</string>
+    <string name="action_sign_in_short">ou entre com: </string>
+    <string name="action_register_in_short">ou registre com: </string>
+
+    <string name="error_invalid_email">Este endereço de e-mail é inválido</string>
+    <string name="error_invalid_password"> Essa senha é muito curta</string>
+    <string name="error_incorrect_password"> Esta senha está incorreta</string>
+    <string name="error_field_required">Este campo é obrigatório</string>
+    <string name="permission_rationale">"As permissões de contatos são necessárias para fornecer e-mails Conclusões."</string>
+
+    <string name="country_prompt">Selecione a cidade</string>
+    <string-array name="country_arrays">
+        <item>Rio Paranaíba</item>
+        <item>Carmo do Paranaíba</item>
+        <item>São Gotardo</item>
+    </string-array>
+
+    <string name="state_prompt">Selecione o estado</string>
+    <string-array name="state_arrays">
+        <item>MG</item>
+    </string-array>
+
+
+</resources>

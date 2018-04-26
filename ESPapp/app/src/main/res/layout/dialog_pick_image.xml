@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btImageFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tirar Foto" />
+    <Button
+        android:id="@+id/btImageGalery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar foto na galeria" />
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="8dp"
+    android:orientation="vertical"
+    tools:context="br.com.stevanini.espplay.fragments.CompleteLogin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Telefone"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etTelefone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="Email"
+                android:maxLines="4"
+                android:inputType="textPersonName" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="8dp"
+    android:orientation="vertical"
+    tools:context="br.com.stevanini.espplay.fragments.CompleteLogin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etStreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Rua"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStreet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="Numero"
+                android:inputType="textPersonName" />
+
+
+            <Spinner
+                android:id="@+id/spinnerCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etNumber"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:entries="@array/country_arrays"
+                android:prompt="@string/country_prompt" />
+
+            <Spinner
+                android:id="@+id/spinnerState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerCity"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:entries="@array/state_arrays"
+                android:prompt="@string/state_prompt" />
+
+            <!--<EditText-->
+            <!--android:id="@+id/etCity"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/etNumber"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="17dp"-->
+            <!--android:ems="10"-->
+            <!--android:hint="Cidade"-->
+            <!--android:inputType="textPersonName" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/etState"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/etCity"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="17dp"-->
+            <!--android:ems="10"-->
+            <!--android:hint="Estado"-->
+            <!--android:inputType="textPersonName" />-->
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btContinuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Salvar" />
+
+
+</LinearLayout>

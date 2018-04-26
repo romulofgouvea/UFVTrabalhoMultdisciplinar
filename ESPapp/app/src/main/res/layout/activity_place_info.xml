@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.stevanini.espplay.activity.PlaceInfoActivity">
+
+    <ImageView
+        android:id="@+id/ivImageAcPlace"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_report_image" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#eee" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Nome do local"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:maxLines="4"
+        android:padding="8dp"
+        android:text="Descrição do local"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Pontos de localização do local: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvLatLng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Latitude: 0\nLongitude: 0"
+        android:textAllCaps="true"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btGoLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Fazer rota ate o local"
+        android:textColor="@color/white" />
+
+</LinearLayout>

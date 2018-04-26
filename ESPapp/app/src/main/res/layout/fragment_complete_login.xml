@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="8dp"
+    tools:context="br.com.stevanini.espplay.fragments.CompleteLogin">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etSobrenome"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/etSobrenome"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Nome"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etSobrenome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etNome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="Sobrenome"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etSobrenome"
+                android:layout_alignStart="@+id/etSobrenome"
+                android:layout_below="@+id/etSobrenome"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/etEmail"
+                android:layout_alignRight="@+id/etEmail"
+                android:layout_below="@+id/etEmail"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:hint="Senha"
+                android:visibility="gone"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/etTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/etSenha"
+                android:layout_alignRight="@+id/etSenha"
+                android:layout_below="@+id/etSenha"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Telefone"
+                android:inputType="phone" />
+
+
+            <RadioGroup
+                android:id="@+id/rgButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/etTelefone"
+                android:layout_alignStart="@+id/etTelefone"
+                android:layout_below="@+id/etTelefone">
+                <RadioButton
+                    android:id="@+id/rbMasculino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Masculino" />
+
+                <RadioButton
+                    android:id="@+id/rbFeminino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feminino" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/etbirthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/etTelefone"
+                android:layout_alignRight="@+id/etTelefone"
+                android:layout_below="@+id/rgButton"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="27dp"
+                android:ems="10"
+                android:hint="Data de Aniversário"
+                android:inputType="date" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btContinuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Continuar" />
+
+
+</RelativeLayout>
